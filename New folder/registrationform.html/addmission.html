@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   <style>
+body{
+margin: 0;
+padding: 0;
+}
+form{
+max-width: 600px;
+margin: 15px auto;
+padding: 20px;
+background-color: palegreen;
+font-weight: bold;
+font-family: Arial;
+background-size: contain;
+}
+label{
+display: block;
+margin-bottom:15px ;
+color: darkcyan;
+
+}
+
+
+h2{
+margin-top: 0%;
+text-align: center;
+color:darkred ;
+text-transform: uppercase;
+}
+#name,#add,#contact,#dob ,#email,#guard{
+width: 80%;
+padding: 6px;
+margin-bottom: 10px;
+border: 1px solid black;
+border-radius: 6px ;
+
+}
+
+
+#Submitbtn,#Resetbtn{
+padding:34px,50px ;
+background-color:darkred ;
+color: navajowhite;
+border: 0PX;
+border-radius:1px;
+cursor:pointer;
+}
+#Submitbtn:hover,#Resetbtn:hover{
+color:blue;
+}
+#a1,#a2,#a3,#a4{
+    margin-bottom: 10px;
+     border:1px solid black ;
+     width: 80%;
+     padding: 6px;
+     border-radius:6px ;
+}
+
+#a3,#a4{
+width: min-content;
+
+}
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </style> 
+</head>
+<body>
+     <form autocomplete="off">
+      <h2>Admission Form</h2>  
+ <fieldset>
+<legend>Personal information:</legend>
+<label for ="name">Name:</label>
+<input type="text"id="name"name=""><br><br>
+
+<label for="add">Address:</label>
+<textarea name="add" id="add"></textarea><br><br>
+
+<label for="dob">DOB:</label> 
+<input type="date"id="dob"name="dob"><br><br>
+
+<label for="Email">Email:</label>
+<input type="email"id="email"name="email"requried placeholder="xyz@gamail.com"><br><br>
+
+<label for="guard">Guardian:</label>
+<input type="guard"id="guard"name="guard">
+ </fieldset><br>
+
+<fieldset>
+<legend>Educational Information</legend><br>
+<label for="a1 ">Completed Education:</label>
+<input type="text"id="a1"name="a1"><br><br>
+<label for="a2">Admission Year:</label>
+<input type="date" name="name"id="a2"><br><br>
+ <label for="">Prevoius Marksheet:</label>
+<input type="file"id="a3"><br><br>
+<label for="a4">Selected Courses:</label>
+<select name="Courses"id="a4">
+<option value="">BE</option>
+<option value="">B.sc</option>
+<option value="">b.com</option>
+</select>
+
+
+<br><br><br><br>
+ <input type="Reset"value="Reset"id="Resetbtn">
+<input type="Submit"value="Submit"id="Submitbtn">
+
+</fieldset>
+     </form>  
+</body>
+</html>
